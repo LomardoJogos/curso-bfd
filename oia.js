@@ -14,7 +14,7 @@ function receitadebRIGADEIRO(porcoes){
 }
 
 const resultadoReceitaBrigadeiro = receitadebRIGADEIRO(5);
-console.log(resultadoReceitaBrigadeiro);
+//console.log(resultadoReceitaBrigadeiro);
 
 
 let imprimirReceita = `
@@ -23,17 +23,18 @@ let imprimirReceita = `
 2. Cozinhe em fogo médio e mexa até que o brigadeiro comece a desgrudar da panela.
 3. Deixe esfriar e faça pequenas bolas com mão passando a massa no granulado. \n`;
 
-const result = resultadoReceitaBrigadeiro.replaceAll("a","u");
-console.log(result);
 
-const resulta = resultadoReceitaBrigadeiro.replaceAll("e","u");
-console.log(resulta);
+const resul1 = receitadebRIGADEIRO();
+//console.log(result);
 
-return imprimirReceita;
+const resulta = (resul1+ imprimirReceita).replaceAll("e","u");
+//console.log(resulta);
+const aad = resulta.replaceAll("a", "u");
+//console.log(aad);
 
 //console.log(imprimirReceita);
 
-const lowerCase = imprimirReceita.toLowerCase();
+const lowerCase = aad.toUpperCase();
 console.log(lowerCase);
 
 
